@@ -1,10 +1,7 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
-
-
 
 namespace CSVLogger
 {
@@ -31,11 +28,11 @@ namespace CSVLogger
 
         [Tooltip("CSV files will be generated in this directory")]
         [SerializeField]
-        private string editorOutputDir;
+        private string editorOutputDir = "./";
 
         [Tooltip("CSV files will be generated in this directory in the built version")]
         [SerializeField]
-        private string buildOutputDir;
+        private string buildOutputDir = "./";
 
         [Tooltip("Delimiter for each logging item.")]
         [SerializeField]
