@@ -38,6 +38,18 @@ namespace CSVLogger.Fields
         DistanceSquare,
     }
 
+    public enum TimeMeasureMethodOption
+    {
+        TimeTime,
+        TimeUnscaledTime,
+    }
+
+    public enum DateTimeOption
+    {
+        LocalTime,
+        UTCTime,
+    }
+
     [System.Serializable]
     public abstract class ItemField
     {

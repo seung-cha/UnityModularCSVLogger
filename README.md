@@ -91,6 +91,10 @@ void Start()
     * String
     * Vec2
     * Vec3
+* Time
+    * Incremental Int (for Trial-based experiment)
+    * Elapsed Time
+    * DateTime
 * Transform
     * Position
     * LocalPosition

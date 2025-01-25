@@ -1,4 +1,5 @@
 using UnityEngine;
+
 namespace CSVLogger.Fields.RigidBodies
 {
     public sealed class RigidbodyAngularVelocityField : RigidBodyField

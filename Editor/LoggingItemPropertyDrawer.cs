@@ -8,6 +8,7 @@ using CSVLogger.Fields;
 using CSVLogger.Fields.Transforms;
 using CSVLogger.Fields.RigidBodies;
 using CSVLogger.Fields.Primitives;
+using CSVLogger.Fields.TimeMeasure;
 
 
 namespace CSVLogger.Editor
@@ -35,6 +36,13 @@ namespace CSVLogger.Editor
                 AddItem<StringField>("Primitive/String", menu, list);
                 AddItem<Vec2Field>("Primitive/Vec2", menu, list);
                 AddItem<Vec3Field>("Primitive/Vec3", menu, list);
+            }
+
+            {
+                // Time
+                AddItem<IncrementalIntField>("Time/IncrementalInt (Trial Count)", menu, list);
+                AddItem<ElapsedTimeField>("Time/ElapsedTime", menu, list);
+                AddItem<DateTimeField>("Time/DateTime", menu, list);
             }
 
             if (targetObject != null)
